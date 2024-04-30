@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    background-color:#b4b4b4;
+
+    /* header and crud buttons will be bolded */
+    header, .crud {
+        font-weight: bold;
+        font-size: 16px;
+        color: black; /* Adjust color as needed */
+        text-transform: uppercase;
+    }
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    border: 5px solid #f9f9f9;
+
+    /* each column is a container that uses flex too */
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    /* space out add, asc/desc, and tasklist */
+    .add {
+        button {
+            padding: 10px 20px;
+        }
+    };
+    .asc-desc {
+        display: flex;
+        padding: 10px;
+    };
+    .task-list {
+        display: grid;
+        grid-row-gap: 10px;
+    }
+}
+
+.right {
+    display: grid;
+}

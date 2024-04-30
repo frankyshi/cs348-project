@@ -1,0 +1,22 @@
+/* hovering over all buttons will have pointer icon */
+button {
+    cursor: pointer;
+}
+
+/* crud buttons have hover colors */
+.Add:hover {
+    background-color: lightgreen;
+}
+.Edit:hover {
+    background-color: yellow;
+}
+.Delete:hover {
+    background-color: lightcoral;
+}
+
+.exit {
+    background-color: red;
+}
+.exit:hover {
+    background-color: darkred;
+}

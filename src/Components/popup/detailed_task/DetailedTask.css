@@ -1,0 +1,57 @@
+.detailed-task {
+    /* center popup in middle of screen on top of everything else */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    width: 750px;
+    max-width: 90%;
+}
+
+.task-container {
+    display: grid;
+    grid-template-rows: auto 100px auto;
+    border: 2px solid #333;
+
+    > * {
+        display: grid;
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+}
+
+.task-top {
+    text-align: center;
+    grid-template-columns: repeat(4, auto);
+    border-bottom: 2px solid #999;
+
+    .exit {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+}
+
+.task-middle {
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.task-bottom {
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    border-top: 2px solid #999;
+}
+
+.title, .priority, .status, .due, .desc, .create {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,21 @@
+/* structuring for each simple task in list */
+.simple-task {
+    display: grid;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #999;
+
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    grid-column-gap: 40px;
+    
+    .title, .priority, .status, .due {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.simple-task:hover {
+    background-color: lightgray;
+}
